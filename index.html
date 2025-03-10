@@ -4,8 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h3>hello</h3>
+    <!-- header section -->
+    <header class="flex justify-between items-center p-2 bg-[#F4F7FF]">
+        <div class="flex gap-2">
+            <img class="w-8 h-8" src="logo.png" alt="">
+            <h3 class="text-2xl font-serif">Dev<span class="font-bold">Board</span></h3>
+        </div>
+        <section class="flex justify-around gap-4 items-center">
+            <div class="flex p-2 rounded-lg bg-white gap-2">
+                <img class="w-8 h-8" src="checkbox.png" alt="">
+                <h3 id="decrement" class="font-bold text-2xl">23</h3>
+            </div>
+            <div>
+                <img src="theme-btn.png" alt="">
+            </div>
+        </section>
+    </header>
+
+    <!-- main section -->
+     <main>
+        <div class="grid grid-cols-5 gap-4 p-2">
+            <div class="flex justify-center bg-[#F4F7FF] items-center gap-2 rounded-lg">
+                <img class="w-8 h-8" src="checkbox.png" alt="">
+                <p>Task Assigned <br><span id="increment" class="font-bold text-2xl">05</span></p>
+            </div>
+            <div class="col-span-2 bg-gradient-to-r from-indigo-500 to-indigo-400 flex items-center text-white rounded-lg gap-4">
+                <img class="w-16" src="board.png" alt="">
+                <p>Discover Something <br>New Today !</p>
+            </div>
+            <div class="flex justify-center bg-[#F4F7FF] items-center gap-2 rounded-lg">
+                <img class="w-8 h-8" src="calender.png" alt="">
+                <p>Wed, <br> <span class="font-bold">Jul 28 2025</span></p>
+            </div>
+            <div>
+                <div class="flex items-center gap-2">
+                    <img class="w-4 h-4" src="activity.png" alt="">
+                    <h3 class="font-bold">Activity Log</h3>
+                </div>
+                <div>
+                    <button class="bg-blue-500 p-2 m-2 text-white rounded-lg">Clear History</button>
+                    <hr class="border-dashed">
+                    <br>
+                    <p class="bg-[#F4F7FF] p-2 rounded-lg">You have complete The Task Add Dark Mode at 12:48:13 PM</p>
+                </div>
+            </div> 
+        </div>
+        <hr class="border-dashed w-4/5">
+
+        <!-- //shopEase start -->
+             <section class="grid grid-cols-3 gap-4 w-5/6">
+             <div class="bg-[#F4F7FF] m-4 p-4">
+                <div>
+                    <span class="bg-white p-2 rounded-lg">ShopEase</span>
+                    <h3 class="font-bold text-2xl p-2">Fix Mobile Button Issue</h3>
+                    <p class="bg-white">Debug using chrome DevTools <br> check for overlopping-</p>
+                </div>
+                <div class="flex gap-4 mt-4">
+                    <div>
+                        <span>Deadline</span>
+                        <h3 class="font-bold">21 March</h3>
+                    </div>
+                    <button id="btn1-completed" class="bg-blue-500 rounded-lg p-2 text-white">Completed</button>
+                </div>
+             </div>
+
+             <div class="bg-[#F4F7FF] m-4 p-4">
+                <div>
+                    <span class="bg-white p-2 rounded-lg">CloudSync</span>
+                    <h3 class="font-bold text-2xl p-2">Add Dark Mode</h3>
+                    <p class="bg-white">Debug using chrome DevTools <br> check for overlopping-</p>
+                </div>
+                <div class="flex gap-4 mt-4">
+                    <div>
+                        <span>Deadline</span>
+                        <h3 class="font-bold">21 March</h3>
+                    </div>
+                    <button id="btn2-completed" class="bg-blue-500 rounded-lg p-2 text-white">Completed</button>
+                </div>
+             </div>
+
+             <div class="bg-[#F4F7FF] m-4 p-4">
+                <div>
+                    <span class="bg-white p-2 rounded-lg">SwittPay</span>
+                    <h3 class="font-bold text-2xl p-2">Optimize Home page</h3>
+                    <p class="bg-white">Debug using chrome DevTools <br> check for overlopping-</p>
+                </div>
+                <div class="flex gap-4 mt-4">
+                    <div>
+                        <span>Deadline</span>
+                        <h3 class="font-bold">21 March</h3>
+                    </div>
+                    <button class="bg-blue-500 rounded-lg p-2 text-white">Completed</button>
+                </div>
+             </div>
+
+             <div class="bg-[#F4F7FF] m-4 p-4">
+                <div>
+                    <span class="bg-white p-2 rounded-lg">Meta</span>
+                    <h3 class="font-bold text-2xl p-2">Add new emoji</h3>
+                    <p class="bg-white">Debug using chrome DevTools <br> check for overlopping-</p>
+                </div>
+                <div class="flex gap-4 mt-4">
+                    <div>
+                        <span>Deadline</span>
+                        <h3 class="font-bold">21 March</h3>
+                    </div>
+                    <button class="bg-blue-500 rounded-lg p-2 text-white">Completed</button>
+                </div>
+             </div>
+
+             <div class="bg-[#F4F7FF] m-4 p-4">
+                <div>
+                    <span class="bg-white p-2 rounded-lg">Google LLc</span>
+                    <h3 class="font-bold text-2xl p-2">Integrate Open AI API</h3>
+                    <p class="bg-white">Debug using chrome DevTools <br> check for overlopping-</p>
+                </div>
+                <div class="flex gap-4 mt-4">
+                    <div>
+                        <span>Deadline</span>
+                        <h3 class="font-bold">21 March</h3>
+                    </div>
+                    <button class="bg-blue-500 rounded-lg p-2 text-white">Completed</button>
+                </div>
+             </div>
+
+             <div class="bg-[#F4F7FF] m-4 p-4">
+                <div>
+                    <span class="bg-white p-2 rounded-lg">Glassdoor</span>
+                    <h3 class="font-bold text-2xl p-2">Improve Job Searching</h3>
+                    <p class="bg-white">Debug using chrome DevTools <br> check for overlopping-</p>
+                </div>
+                <div class="flex gap-4 mt-4">
+                    <div>
+                        <span>Deadline</span>
+                        <h3 class="font-bold">21 March</h3>
+                    </div>
+                    <button class="bg-blue-500 rounded-lg p-2 text-white">Completed</button>
+                </div>
+             </div>
+             </section>
+            <!-- //shopEase end -->
+     </main>
+    <script src="a5Dev.js"></script>
 </body>
 </html>
